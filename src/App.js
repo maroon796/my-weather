@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Header from './components/Header/Header';
-import classes from './App.module.css';
 import SearchBar from './components/SearchBar/SearchBar';
 import Card from './components/Card/Card';
+import classes from './App.module.css';
 
 function App() {
   const [weatherInfo, setWeatherInfo] = useState({});
@@ -65,6 +65,7 @@ function App() {
         setError(true);
       });
   };
+
   return (
     <>
       <Header />
